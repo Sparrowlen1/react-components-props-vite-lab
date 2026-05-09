@@ -1,7 +1,7 @@
-// Blog data containing all the information for the personal blog
+// src/data/blog.js
 const blogData = {
   name: "Sparrow's Dev Blog",
-  image: "/blog-logo.png",
+  image: "https://via.placeholder.com/215",  // Use placeholder image
   about: "Welcome to my personal blog where I share my journey in web development, React tips, and programming insights. Join me as I explore the world of modern web technologies!",
   posts: [
     {

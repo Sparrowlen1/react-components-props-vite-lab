@@ -1,3 +1,4 @@
+// src/components/ArticleList.jsx
 import React from 'react';
 import Article from './Article';
 
@@ -9,11 +10,10 @@ import Article from './Article';
  */
 function ArticleList({ posts }) {
   return (
-    <main style={styles.main}>
-      <h2 style={styles.heading}>Latest Posts</h2>
+    <main>
       {posts.map(post => (
         <Article 
-          key={post.id}  // Unique key for each article
+          key={post.id}
           title={post.title}
           date={post.date}
           preview={post.preview}
@@ -22,21 +22,5 @@ function ArticleList({ posts }) {
     </main>
   );
 }
-
-// Inline styles for the ArticleList component
-const styles = {
-  main: {
-    maxWidth: '800px',
-    margin: '20px auto',
-    padding: '0 20px',
-    flex: 1
-  },
-  heading: {
-    color: '#2c3e50',
-    marginBottom: '20px',
-    borderBottom: '2px solid #3498db',
-    paddingBottom: '10px'
-  }
-};
 
 export default ArticleList;
