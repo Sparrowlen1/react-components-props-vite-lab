@@ -1,31 +1,34 @@
-import logo from "../assets/logo";
-
+// Blog data containing all the information for the personal blog
 const blogData = {
-  name: "Underreacted",
-  image: logo,
-  about: "A blog about learning React",
+  name: "Sparrow's Dev Blog",
+  image: "/blog-logo.png",
+  about: "Welcome to my personal blog where I share my journey in web development, React tips, and programming insights. Join me as I explore the world of modern web technologies!",
   posts: [
     {
       id: 1,
-      title: "Components 101",
-      date: "December 15, 2020",
-      preview: "Setting up the building blocks of your site",
-      minutes: 5,
+      title: "Getting Started with React",
+      date: "January 15, 2024",
+      preview: "React has revolutionized the way we build web applications. In this article, I'll walk you through the basics of React including components, props, and state management..."
     },
     {
       id: 2,
-      title: "React Data Flow",
-      date: "December 11, 2020",
-      preview: "Passing props is never passé",
-      minutes: 15,
+      title: "Understanding Props in React",
+      date: "January 20, 2024",
+      preview: "Props are essential for passing data between components. Learn how to effectively use props to create reusable and dynamic React components..."
     },
     {
       id: 3,
-      title: "Function vs Class Components",
-      preview: "React, meet OOJS.",
-      minutes: 47,
+      title: "Building Your First Component",
+      date: "January 25, 2024",
+      preview: "Components are the building blocks of React applications. Discover how to create functional components and structure your React app efficiently..."
     },
-  ],
+    {
+      id: 4,
+      title: "Styling in React Applications",
+      date: "February 1, 2024",
+      preview: "From CSS modules to styled-components, explore different approaches to styling your React applications and find what works best for your projects..."
+    }
+  ]
 };
 
 export default blogData;
